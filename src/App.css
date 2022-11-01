@@ -1,0 +1,191 @@
+.App {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white ;
+}
+
+header {
+  width: 100vw;
+  height: 120px;
+  background: linear-gradient(90deg, #1c5df5 0%, #182848 100%);
+  color: white;
+  padding: 0px 0px;
+}
+
+.topnav {
+  background: linear-gradient(90deg, #1c5df5 0%, #182848 100%);
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  text-align: center;
+  background-color: #36373e;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white ;
+}
+
+.auth-form-container, .login-form, .register-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+
+}
+
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+}  
+
+input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+#log-in {
+  border: none;
+  width: 200px;
+  background-color: white;
+  color: black;
+  font-size:large;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#register {
+  border: none;
+  width: 200px;
+  background-color: white;
+  font-size: large;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#switch {
+  border: none;
+  width: 200px;
+  background-color: white;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#submit-btn {
+  border: none;
+  width: 250px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#load-btn {
+  border: none;
+  width: 250px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.game-card {
+  background-color: rgba(118, 169, 235, 0.866);
+  color: black;
+  width: 150px;
+  font-size: 20px;
+  padding: 1px;
+  margin: 1px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.MyBets-container {
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.NFL-container {
+  
+  display: flex;
+  gap: 8px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+#fname {
+  text-align: left;
+  width: 225px;
+}
+  
+  #lname {
+    text-align: left;
+    width: 225px;
+}
+
+  #subject {
+    text-align: left;
+    height: 125px;
+    width: 250px;
+}
+
+Footer {
+  position: fixed;
+  bottom: 0;
+  margin-top: auto;
+  background-color: #36373e;
+  color: white;
+  width: 100vw;
+  height: 100px;
+  gap: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .target {
+    color: red;
+}
+  
+  img {
+  height: 50px;
+}
