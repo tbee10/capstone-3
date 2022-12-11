@@ -25,23 +25,11 @@ sequelize.authenticate().then(() => {
         sequelize,
     });
 
-    app.post("/user_bets", async (req, res) => {
-
-        const {bet} = req.body
-
-       await sequelize.query(`
-        insert into user_bets (
-            bet
-        ) values (
-            '${bet}'
-        );
-        `);
-
     app.post("/users", async (req, res) => {
 
-        const {name} = req.body.name
-        const {email} = req.body.email
-        const {password} = req.body.password
+        const {name} = req.body
+        const {email} = req.body
+        const {password} = req.body
 
         await sequelize.query(`
         insert into users (
@@ -49,17 +37,29 @@ sequelize.authenticate().then(() => {
             email,
             password
         ) values (
-            '${name}'
-            '${email}'
+            '${name}',
+            '${email}',
             '${password}'
         )
-        `)
-    })    
+        `);
+
+        // app.post("user_bets", async (req, res) => {
+            
+        //     const {bets} = req.body
+
+        //     await sequelize.query(`
+        //     insert into user_bets (
+        //         bet
+        //     ) values (
+        //         '${bet}
+        //     )
+        //     `);
+        // })
+    
+        
         console.log(req.body);
         res.sendStatus(200);
     })
-
-
 
     app.listen(PORT, () => {
         console.log(`Server is hitting on ${PORT}`)

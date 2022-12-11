@@ -8,14 +8,14 @@ const [email, setEmail] = useState('');
 const [password, setPassword] = useState('');
 
 function saveRegister(e){
-  console.log("hit")
   axios.post("/users", {
   name: name,
   email: email,
   password: password,})
   .then((res) => {
     console.log(res)
-    console.log("hit2")
+    window.alert("Thank you for registering")
+  
   })
   .catch((err) => {
     console.log(err)

@@ -1,8 +1,25 @@
 import React from 'react'
+// import axios from 'axios'
 
 const Contact = () => {
 
-
+  // const [fname, setfame] = useState('')
+  // const [lname, setlname] = useState('');
+  // const [message, setMessage] = useState('');
+  
+  // function saveMessage(e){
+  //   axios.post("/users", {
+  //   fname: fname,
+  //   lname: lname,
+  //   message: message,})
+  //   .then((res) => {
+  //     console.log(res)
+    
+  //   })
+  //   .catch((err) => {
+  //     console.log(err)
+  //   })
+  // }
   
   return (
     <div>

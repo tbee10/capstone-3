@@ -12,6 +12,7 @@ const SignIn = (props) => {
       .then((res) => {
         console.log(res.data)
         event.preventDefault();
+        window.alert("You are now logged in")
       })
         .catch((err) => {
           console.log(err)
